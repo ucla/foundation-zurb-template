@@ -15,6 +15,8 @@ This is based off of the official ZURB Template for use with the UCLA fork of [F
 
 ## Installation
 
+### Build Tools / Dependencies
+
 To use this template, your computer needs:
 
 - [NodeJS](https://nodejs.org/en/) (0.10 or greater)
@@ -34,12 +36,39 @@ npm install
 bower install
 ```
 
-Finally, run `npm start` to run Gulp. Your finished site will be created in a folder called `dist`, viewable at this URL:
+### Framework
 
+Since we're using a forked version of Zurb Foundation itself we'll just pull it in directly (for now!) as a Git Submodule and stick it in the bower_components directory to keep any pathing issues out of the way (yeah yeah, I know).
+
+You can pull down the latest version inside your application by running:
+
+```bash
+git submodule update --remote bower_components/foundation-sites
 ```
-http://localhost:8000
+
+If you need to recreate the .gitmodules file:
+
+```bash
+git submodule add -f https://github.com/ucla/foundation-sites.git bower_components/foundation-sites
 ```
+
+Further Reading:
+
+[http://www.git-scm.com/book/en/v2/Git-Tools-Submodules](http://www.git-scm.com/book/en/v2/Git-Tools-Submodules)
+
+
+## Useage
+
+Finally to run Gulp:
+
+```bash
+npm start
+``` 
+
+Your finished site will be created in a folder called `dist`, viewable at this URL: `http://localhost:8000`
 
 To create compressed, production-ready assets:
 
- `npm run build`
+```bash
+npm run build
+```

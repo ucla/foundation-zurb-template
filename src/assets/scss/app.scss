@@ -1,9 +1,15 @@
 @charset 'utf-8';
 
+/////////////////////////////////////////
+///           FRAMEWORK
+/////////////////////////////////////////
+
+// Main toggles
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
 
+// ZURB Foundation for Sites
 @include foundation-global-styles;
 @include foundation-grid;
 @include foundation-typography;
@@ -40,5 +46,19 @@
 @include foundation-tooltip;
 @include foundation-top-bar;
 
+// UCLA
+@import 'ucla/ucla-badges';
+@import 'ucla/ucla-messages';
+@import 'ucla/ucla-flair';
+@import 'ucla/iam-footer';
+
+// Polyfill Overrides
+@import 'ucla/webshim-styling';
+
+// ZURB Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+/////////////////////////////////////////
+///      APPLICATION COMPONENTS
+/////////////////////////////////////////

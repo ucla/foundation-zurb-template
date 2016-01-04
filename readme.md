@@ -1,6 +1,4 @@
-# ZURB Template
-
-**Please open all issues with this template on the main [Foundation for Sites](https://github.com/ucla/foundation-sites/issues) repo.**
+# UCLA's ZURB Foundation for Sites Template
 
 This is based off of the official ZURB Template for use with the UCLA fork of [Foundation for Sites](http://foundation.zurb.com/sites). It has a Gulp-powered build system with these features:
 

@@ -48,8 +48,8 @@
 
 // UCLA
 @import 'ucla/ucla-badges';
+@import 'ucla/ucla-decorative';
 @import 'ucla/ucla-messages';
-@import 'ucla/ucla-flair';
 @import 'ucla/iam-footer';
 
 // Polyfill Overrides
@@ -62,3 +62,5 @@
 /////////////////////////////////////////
 ///      APPLICATION COMPONENTS
 /////////////////////////////////////////
+
+// @import 'components/foobar';

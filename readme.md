@@ -47,7 +47,7 @@ git submodule update --remote bower_components/foundation-sites
 If you need to recreate the .gitmodules file:
 
 ```bash
-git submodule add -f https://github.com/ucla/foundation-sites.git bower_components/foundation-sites
+git submodule add -b develop -f https://github.com/ucla/foundation-sites.git bower_components/foundation-sites
 ```
 
 Further Reading:
@@ -55,13 +55,13 @@ Further Reading:
 [http://www.git-scm.com/book/en/v2/Git-Tools-Submodules](http://www.git-scm.com/book/en/v2/Git-Tools-Submodules)
 
 
-## Useage
+## Usage
 
 Finally to run Gulp:
 
 ```bash
 npm start
-``` 
+```
 
 Your finished site will be created in a folder called `dist`, viewable at this URL: `http://localhost:8000`
 

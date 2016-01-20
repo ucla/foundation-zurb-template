@@ -1,6 +1,6 @@
 var $          = require('gulp-load-plugins')();
 var access     = require('gulp-accessibility');
-var arialinter = require('gulp-arialinter');
+// var arialinter = require('gulp-arialinter');
 var argv       = require('yargs').argv;
 var browser    = require('browser-sync');
 var gulp       = require('gulp');
@@ -99,10 +99,6 @@ gulp.task('pages', function() {
       partials: 'src/partials/',
       data: 'src/data/',
       helpers: 'src/helpers/'
-    }))
-    .pipe(access());
-    .pipe(arialinter({
-      level: 'AA'
     }))
     .pipe(gulp.dest('dist'))
     .on('finish', browser.reload);
@@ -205,4 +201,13 @@ gulp.task('default', ['build', 'server'], function() {
   gulp.watch(['src/assets/js/**/*.js'], ['javascript']);
   gulp.watch(['src/assets/img/**/*'], ['images']);
   gulp.watch(['src/styleguide/**'], ['styleguide']);
+});
+
+// run an accessibility check with 'npm start a11y'
+gulp.task('a11y', function() {
+  gulp.run('pages');
+  return gulp.src('dist/*.html')
+  .pipe(access({accessibilityLevel: 'WCAG2A'}))
+//.pipe(arialinter({level: 'AA'}))
+  done();
 });

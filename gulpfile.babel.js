@@ -50,7 +50,7 @@ function copy() {
 function copyBower() {
   return gulp.src(PATHS.bowerDirectLinked)
     .pipe(gulp.dest('dist/assets/bower_components'));
-});
+}
 
 // Copy page templates into finished HTML files
 function pages() {

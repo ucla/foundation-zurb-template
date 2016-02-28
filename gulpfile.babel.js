@@ -9,6 +9,8 @@ import rimraf   from 'rimraf';
 import sherpa   from 'style-sherpa';
 import yaml     from 'js-yaml';
 import fs       from 'fs';
+import access   from 'gulp-accessibility';
+// import aria     from 'gulp-arialinter';
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -26,7 +28,7 @@ function loadConfig() {
 
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
- gulp.series(clean, gulp.parallel(pages, sass, javascript, images, copy), styleGuide));
+ gulp.series(clean, gulp.parallel(pages, sass, javascript, images, copy, copy-bower), styleGuide));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -44,6 +46,12 @@ function copy() {
   return gulp.src(PATHS.assets)
     .pipe(gulp.dest('dist/assets'));
 }
+
+// Copy select files from bower-components to be loaded separately
+function copy-bower() {
+  return gulp.src(PATHS.bowerDirectLinked)
+    .pipe(gulp.dest('dist/assets/bower_components'));
+});
 
 // Copy page templates into finished HTML files
 function pages() {

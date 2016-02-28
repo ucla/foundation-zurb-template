@@ -24,6 +24,13 @@ PATHS:
   sass:
     - "bower_components/foundation-sites/scss"
     - "bower_components/motion-ui/src"
+#    - "bower_components/singularity/stylesheets"
+#    - "bower_components/breakpoint/stylesheets"
+    - "bower_components/sass-toolkit/stylesheets"
+  # Paths to (JS) assets that need to be loaded separately
+  bowerDirectLinked:
+    - "bower_components/webshim/js-webshim/minified/**/*"
+    - "bower_components/zxcvbn/dist/zxcvbn.js"
   # Paths to JavaScript libraries, which are compined into one file
   javascript:
     # Libraries requried by Foundation

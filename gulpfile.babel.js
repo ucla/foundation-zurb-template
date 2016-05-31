@@ -91,7 +91,8 @@ function sass() {
     .pipe($.autoprefixer({
       browsers: COMPATIBILITY
     }))
-    .pipe($.if(PRODUCTION, $.uncss(UNCSS_OPTIONS)))
+    // Comment in the pipe below to run UnCSS in production
+    //.pipe($.if(PRODUCTION, $.uncss(UNCSS_OPTIONS)))
     .pipe($.if(PRODUCTION, $.cssnano()))
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
     .pipe(gulp.dest(PATHS.dist + '/assets/css'))
@@ -127,6 +128,12 @@ function server(done) {
   browser.init({
     server: PATHS.dist, port: PORT
   });
+  done();
+}
+
+// Reload the browser with BrowserSync
+function reload(done) {
+  browser.reload();
   done();
 }
 

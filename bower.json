@@ -15,7 +15,6 @@
     "tests"
   ],
   "dependencies": {
-    "foundation-sites": "~6.2.3",
     "motion-ui": "~1.2.2",
     "webshim": "~1.15.10",
     "sass-toolkit": "~2.9.0",

@@ -21,7 +21,7 @@
 /////////////////////////////////////////
 
 @include foundation-global-styles;
-@include foundation-grid;
+// @include foundation-grid;
 // @include foundation-flex-grid;
 @include foundation-typography;
 // @include foundation-button;
@@ -33,15 +33,16 @@
 // @include foundation-breadcrumbs;
 // @include foundation-button-group;
 // @include foundation-callout;
+// @include foundation-card;
 // @include foundation-close-button;
+@include foundation-menu;
+// @include foundation-menu-icon;
 // @include foundation-drilldown-menu;
 // @include foundation-dropdown;
 // @include foundation-dropdown-menu;
-// @include foundation-flex-video;
+// @include foundation-responsive-embed;
 // @include foundation-label;
 // @include foundation-media-object;
-@include foundation-menu;
-// @include foundation-menu-icon;
 // @include foundation-off-canvas;
 // @include foundation-orbit;
 // @include foundation-pagination;
@@ -49,7 +50,7 @@
 // @include foundation-progress-element;
 // @include foundation-meter-element;
 // @include foundation-slider;
-@include foundation-sticky;
+// @include foundation-sticky;
 // @include foundation-reveal;
 // @include foundation-switch;
 // @include foundation-table;

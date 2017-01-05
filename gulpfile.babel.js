@@ -9,7 +9,7 @@ import rimraf   from 'rimraf';
 import sherpa   from 'style-sherpa';
 import yaml     from 'js-yaml';
 import fs       from 'fs';
-import access   from 'gulp-accessibility';
+// import access   from 'gulp-accessibility';
 // import arialinter  from 'gulp-arialinter';
 
 // Load all Gulp plugins into one variable

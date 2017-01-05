@@ -16,8 +16,7 @@
   ],
   "dependencies": {
     "motion-ui": "~1.2.2",
-    "webshim": "~1.15.10",
-    "sass-toolkit": "~2.9.0",
+    "sass-toolkit": "~2.10.2",
     "what-input": "^1.2.5",
     "zxcvbn": "~4.2.0"
   },

@@ -23,6 +23,7 @@
 @include foundation-global-styles;
 // @include foundation-grid;
 // @include foundation-flex-grid;
+// @include foundation-xy-grid-classes;
 @include foundation-typography;
 // @include foundation-button;
 @include foundation-forms;
@@ -35,7 +36,7 @@
 // @include foundation-callout;
 // @include foundation-card;
 // @include foundation-close-button;
-@include foundation-menu;
+// @include foundation-menu;
 // @include foundation-menu-icon;
 // @include foundation-drilldown-menu;
 // @include foundation-dropdown;
@@ -62,10 +63,11 @@
 @include foundation-visibility-classes;
 // @include foundation-float-classes;
 // @include foundation-flex-classes;
+// @include foundation-prototype-classes;
 
 // ZURB Motion UI
-@include motion-ui-transitions;
-@include motion-ui-animations;
+// @include motion-ui-transitions;
+// @include motion-ui-animations;
 
 /////////////////////////////////////////
 ///   ADDITIONAL UC SPECIFIC STYLING
@@ -78,9 +80,6 @@
 @import 'ucla/iam-footer';
 @import 'ucla/errors';
 @import 'ucla/prototyping-controls';
-
-// Polyfill Overrides
-@import 'ucla/webshim-styling';
 
 /////////////////////////////////////////
 ///      APPLICATION COMPONENTS

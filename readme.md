@@ -4,7 +4,7 @@ This is based off of the official ZURB Template for use with the UCLA fork of [F
 
 - Handlebars HTML templates with Panini
 - Sass compilation and prefixing
-- JavaScript concatenation
+- JavaScript module bundling with webpack
 - Built-in BrowserSync server
 - For production builds:
   - CSS compression

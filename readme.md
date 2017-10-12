@@ -32,7 +32,9 @@ Then open the folder in your command line, and install the needed dependencies:
 cd projectname
 npm install
 bower install
-```Finally, run `npm start` to run Gulp. Your finished site will be created in a folder called `dist`, viewable at this URL:
+```
+
+Finally, run `npm start` to run Gulp. Your finished site will be created in a folder called `dist`, viewable at this URL:
 
 ```
 http://localhost:8000
@@ -42,20 +44,15 @@ http://localhost:8000
 
 Since we're using a forked version of Zurb Foundation itself we'll just pull it in directly (for now!) as a Git Submodule and stick it in the bower_components directory to keep any pathing issues out of the way (yeah yeah, I kow).
 
-You can pulRun `npm start` to run Gulp. Your finished site will be created in a folder called `dist`, viewable at this URL:
+You can Run `npm start` to run Gulp. Your finished site will be created in a folder called `dist`, viewable at this URL:
 
 ```
 http://localhost:8000
-```cation by running:
+```
 
+## Updating
 
-```bashgit submodule update --remote bower_components/foundation-sites
-
-
-`foundation-sites.git bower_components/foundation-sites
-```Further Reading:
-
-[http://www.git-scm.com/book/en/v2/Git-Tools-Submodules](http://www.git-scm.com/book/en/v2/Git-Tools-Submodules)
+After making sure you've pulled down the latest version from github, run `npm install` and `bower install`
 
 
 ## Usage
